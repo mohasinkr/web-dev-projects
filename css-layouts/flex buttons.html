@@ -10,13 +10,7 @@ body{
   
 }
 
-.menu-container>div>a{
-    background-color: white;
-    color:#35dba4;
-    font-weight: bolder;
-}
-
-.menu-container{
+.container{
   background-color:#35dba4;
   height: 100px;
   margin-top:30px;
@@ -25,83 +19,29 @@ body{
   justify-content:center;
 }
 
-.hover-box1{
+.container>div{
     display:flex;
     border : 1px solid transparent;
     margin-right:30px;
     align-items : center;
 }
 
-.hover-box1>a{
-  font : 14px sans-serif;
-  padding: 10px;
-  text-decoration:none;
-  border-radius:15px;
+.container>div>a{
+    background-color: white;
+    color:#35dba4;
+    font : 14px sans-serif;
+    font-weight: bolder;
+    text-decoration:none;
+    padding: 10px;
+    border-radius:15px;
 }
 
-.hover-box1:hover>a{
+.container>div:hover>a{
   animation-name : drop-down;
   animation-duration : .5s;
   animation-fill-mode:forwards;
 }
-.hover-box2{
-    display:flex;
-    border : 1px solid transparent;
-    margin-right: 30px;
-    height: 50px;
-    align-items : center;
-}
 
-.hover-box2>a{
-  font : 14px sans-serif;
-  padding: 10px;
-  text-decoration:none;
-  border-radius:15px;
-}
-
-.hover-box2:hover>a{
-  animation-name : drop-down;
-  animation-duration : .5s;
-  animation-fill-mode:forwards;
-}
-.hover-box3{
-    display:flex;
-    border : 1px solid transparent;
-    margin-right:30px;
-    align-items : center;
-}
-
-.hover-box3>a{
-  font : 14px sans-serif;
-  padding: 10px;
-  text-decoration:none;
-  border-radius:15px;
-}
-
-.hover-box3:hover>a{
-  animation-name : drop-down;
-  animation-duration : .5s;
-  animation-fill-mode:forwards;
-}
-.hover-box4{
-    display:flex;
-    border : 1px solid transparent;
-    margin-right:30px;
-    align-items : center;
-}
-
-.hover-box4>a{
-  font : 14px sans-serif;
-  padding: 10px;
-  text-decoration:none;
-  border-radius:15px;
-}
-
-.hover-box4:hover>a{
-  animation-name : drop-down;
-  animation-duration : .5s;
-  animation-fill-mode:forwards;
-}
 @keyframes drop-down{
   from{margin-top:0;}
   to{margin-top:40px;}
@@ -109,7 +49,7 @@ body{
     </style>
 </head>
 <body>
-    <div class="menu-container">
+    <div class="container">
         <div class="hover-box1">
         <a href="#">HOME</a> </div>
         <div class="hover-box2">
