@@ -1,58 +1,53 @@
 body {
-    background-color: hsl(257, 40%, 49%);
-    padding: 0;
-    margin: auto;
+  background: url("/images/bg-desktop.svg") center center fixed, hsl(257, 40%, 49%);
+  padding: 0;
+  margin: auto;
 }
 
 header>img {
-    width: 150px;
-    height: 40px;
-    margin: 37px 0 0 45px;
+  width: 150px;
+  height: 40px;
+  margin: 37px 0 0 45px;
 }
 
 .content {
-    position: relative;
-    color: white;
-    display: flex;
-    margin: 40px 70px 60px 45px;
-    justify-content: center;
-    column-gap: 45px;
-    font-family: 'Poppins', sans-serif;
-}
-
-.foreground-image {
-    min-width: 100vh;
-    min-height: 100vh;
-    position: absolute;
-    opacity: 80%;
-}
-
-.titleandtext {
-    margin-top: 20px;
+  color: white;
+  display: flex;
+  margin: 40px 70px 60px 45px;
+  justify-content: center;
+  column-gap: 45px;
+  font-family: 'Poppins', sans-serif;
 }
 
 #herotitle {
-    font-weight: 600;
-    font-size: 30px;
-    letter-spacing: 1px;
+  font-weight: 600;
+  font-size: 30px;
+  letter-spacing: 1px;
 }
 
 #herotext {
-    font-family: 'Open Sans', sans-serif;
-    margin-top: -10px;
-    font-size: 14px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
 }
 
 .socialicons {
-    display: flex;
-    float: right;
-    margin-right: 70px;
-    margin-top: 50px;
+  display: flex;
+  float: right;
+  margin-right: 70px;
+  margin-bottom: 10px;
 }
 
-i {
-    border: 1px solid white;
-    border-radius: 50%;
-    padding: 5px;
-    margin-right: 10px;
+.fab {
+  border: 1px solid white;
+  border-radius: 50%;
+  padding: 8px;
+  color: white;
+  margin-right: 20px;
 }
+
+.fab:hover {
+  color: rgb(255, 83, 196);
+}
+
+/* Media queries for desktop view
+@media screen and (min-width:650px) {}*/
