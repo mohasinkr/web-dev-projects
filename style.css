@@ -42,6 +42,7 @@ header>img {
 .socialicons {
   display: flex;
   float: right;
+  column-gap: 20px;
   margin-right: 70px;
   margin-bottom: 10px;
 }
@@ -51,7 +52,6 @@ header>img {
   border-radius: 50%;
   padding: 8px;
   color: white;
-  margin-right: 20px;
 }
 
 .fab:hover {
@@ -62,7 +62,6 @@ header>img {
 /* Media queries for desktop view*/
 @media screen and (min-width:650px) {
   body {
-    background-color: hsl(257, 40%, 49%);
     background-image: url("./images/bg-desktop.svg");
   }
 
