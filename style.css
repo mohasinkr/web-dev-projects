@@ -18,36 +18,51 @@ header>img {
 }
 
 .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 56.5px 35px 60px 36px;
+  font-family: 'Poppins', sans-serif;
+  row-gap: 40px;
+}
+
+.hero-content {
   color: white;
   display: flex;
   flex-direction: column;
-  margin: 55.5px 37px 50px 38px;
   justify-content: center;
-  row-gap: 17px;
-  font-family: 'Poppins', sans-serif;
 }
 
-#herotitle {
+.hero-content>#herotitle {
   font-weight: 600;
-  font-size: 20px;
+  font-size: 26px;
+  text-align: center;
 }
 
-#herotext {
+.hero-content>#herotext {
+  margin: 0;
   font-family: 'Open sans', sans-serif;
   font-weight: 300;
-  font-size: 15px;
+  font-size: 18px;
+  text-align: center;
 }
 
-#register-button{
-  text-decoration:none;
-  color:black;
-  text-align:center;
-  border : 1px solid white;
-  border-radius: 15px;
-  padding:13px 0;
+.container>#register-button {
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  border: 1px solid white;
+  border-radius: 30px;
+  padding: 13px 0;
   background-color: white;
-  width:165px;
-  margin-left:30px;
+  width: 245px;
+  margin-left: 0;
+}
+
+.container>#register-button:hover {
+  border-color: hsl(300, 69%, 71%);
+  background-color: hsl(300, 69%, 71%);
 }
 
 .socialicons {
