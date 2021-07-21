@@ -1,0 +1,155 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(257, 40%, 49%);
+  background-image: url("./images/bg-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 0;
+  margin: auto;
+  -webkit-tap-highlight-color: transparent;
+}
+
+header>img {
+  width: 125px;
+  height: 32px;
+  margin: 33px 0 0 35px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 56.5px 35px 60px 36px;
+  font-family: 'Poppins', sans-serif;
+  row-gap: 40px;
+}
+
+.hero-content {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-content>#herotitle {
+  font-weight: 600;
+  font-size: 26px;
+  text-align: center;
+}
+
+.hero-content>#herotext {
+  margin: 0;
+  font-family: 'Open sans', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  text-align: center;
+}
+
+.hero-content>#register-button {
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  border: 1px solid white;
+  border-radius: 30px;
+  box-shadow: 0 3px 15px;
+  padding: 13px 0;
+  background-color: white;
+  width: 245px;
+  margin-top: 15px;
+  margin-left: 0;
+}
+
+.hero-content>#register-button:hover {
+  border-color: hsl(300, 69%, 71%);
+  background-color: hsl(300, 69%, 71%);
+}
+
+.socialicons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 20px;
+}
+
+.fab {
+  border: 1px solid white;
+  border-radius: 50%;
+  padding: 8px;
+  color: white;
+}
+
+.fab:hover {
+  color: rgb(255, 83, 196);
+  border-color: rgb(255, 83, 196);
+}
+
+/* Media queries for desktop view*/
+@media screen and (min-width:750px) {
+  body {
+    background-image: url("./images/bg-desktop.svg");
+  }
+
+  header>img {
+    width: 214px;
+    height: 37px;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 70px 60px 45px;
+    font-family: 'Poppins', sans-serif;
+    column-gap: 40px;
+  }
+
+  .hero-content {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero-content>#herotitle {
+    font-weight: 600;
+    font-size: 26px;
+    text-align: center;
+  }
+
+  .hero-content>#herotext {
+    margin: 0;
+    font-family: 'Open sans', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .hero-content>#register-button {
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    border: 1px solid white;
+    border-radius: 30px;
+    padding: 13px 0;
+    background-color: white;
+    width: 245px;
+    margin-top: 20px;
+  }
+
+  .hero-content>#register-button:hover {
+    border-color: hsl(300, 69%, 71%);
+    background-color: hsl(300, 69%, 71%);
+  }
+
+  .socialicons {
+    float: right;
+    margin-right: 50px;
+  }
+}
