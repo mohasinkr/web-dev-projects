@@ -9,6 +9,7 @@ body {
   background-size: contain;
   padding: 0;
   margin: auto;
+  -webkit-tap-highlight-color: transparent;
 }
 
 header>img {
@@ -32,6 +33,7 @@ header>img {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 .hero-content>#herotitle {
@@ -48,7 +50,7 @@ header>img {
   text-align: center;
 }
 
-.container>#register-button {
+.hero-content>#register-button {
   text-decoration: none;
   color: black;
   text-align: center;
@@ -57,10 +59,11 @@ header>img {
   padding: 13px 0;
   background-color: white;
   width: 245px;
+  margin-top:15px;
   margin-left: 0;
 }
 
-.container>#register-button:hover {
+.hero-content>#register-button:hover {
   border-color: hsl(300, 69%, 71%);
   background-color: hsl(300, 69%, 71%);
 }
@@ -91,22 +94,55 @@ header>img {
   }
 
   .container {
-    margin: 40px 70px 60px 45px;
-    justify-content: flex-start;
+    display: flex;
     flex-direction: row;
-    row-gap: 0;
-    column-gap: 45px;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 70px 60px 45px;
     font-family: 'Poppins', sans-serif;
+    column-gap:  40px;
   }
 
-  #herotitle {
+  .hero-content {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero-content>#herotitle {
     font-weight: 600;
-    font-size: 30px;
-    letter-spacing: 1px;
+    font-size: 26px;
+    text-align: center;
   }
 
-  #herotext {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 14px;
+  .hero-content>#herotext {
+    margin: 0;
+    font-family: 'Open sans', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    text-align: center;
   }
+
+  .hero-content>#register-button {
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    border: 1px solid white;
+    border-radius: 30px;
+    padding: 13px 0;
+    background-color: white;
+    width: 245px;
+    margin-top:20px;
+  }
+
+  .hero-content>#register-button:hover {
+    border-color: hsl(300, 69%, 71%);
+    background-color: hsl(300, 69%, 71%);
+  }
+.socialicons{
+  float:right;
+  margin-right:10px;
+}
 }
