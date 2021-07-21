@@ -1,2 +1,2 @@
 # learning-web-dev
-A repository to store all the projects I worked on to learn web development.
+This repository is based on the Front-end Mentor Huddle Landing Page challenge!
