@@ -60,7 +60,7 @@ header>img {
   padding: 13px 0;
   background-color: white;
   width: 245px;
-  margin-top:15px;
+  margin-top: 15px;
   margin-left: 0;
 }
 
@@ -94,6 +94,11 @@ header>img {
     background-image: url("./images/bg-desktop.svg");
   }
 
+  header>img {
+    width: 214px;
+    height: 37px;
+  }
+
   .container {
     display: flex;
     flex-direction: row;
@@ -101,7 +106,7 @@ header>img {
     align-items: center;
     margin: 40px 70px 60px 45px;
     font-family: 'Poppins', sans-serif;
-    column-gap:  40px;
+    column-gap: 40px;
   }
 
   .hero-content {
@@ -135,15 +140,16 @@ header>img {
     padding: 13px 0;
     background-color: white;
     width: 245px;
-    margin-top:20px;
+    margin-top: 20px;
   }
 
   .hero-content>#register-button:hover {
     border-color: hsl(300, 69%, 71%);
     background-color: hsl(300, 69%, 71%);
   }
-.socialicons{
-  float:right;
-  margin-right:50px;
-}
+
+  .socialicons {
+    float: right;
+    margin-right: 50px;
+  }
 }
