@@ -1,10 +1,13 @@
 body {
+  max-width:70%;
   margin: auto;
   padding-top: 20px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
 }
 
 .container {
+  background-color:aquamarine;
   display: flex;
   justify-content: center;
 }
