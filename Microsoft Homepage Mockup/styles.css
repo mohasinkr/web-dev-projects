@@ -1,20 +1,30 @@
 body {
   margin: auto;
-  padding-top : 20px;
+  padding-top: 20px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.container{
-  display:flex;
+.container {
+  display: flex;
   justify-content: center;
 }
 
 #header-img {
-  width: 110px;
-  margin-right : 20px;
+  width: 140px;
+  margin-right: 40px;
 }
 
-.header-navigation>a {
-  text-decoration: none;
+.menu-items {
+  display: inline;
+  padding-bottom : 10px;
+}
+
+.menu-items>li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.menu-items>li>a{
   color:grey;
+  text-decoration:none;
 }
