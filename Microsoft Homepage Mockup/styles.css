@@ -44,30 +44,31 @@ body {
   text-underline-offset: 8px;
 }
 
-.shop-button{
-  display:inline-block;
+.shop-button {
+  display: inline-block;
   background-color: black;
-  color:white;
+  color: white;
   text-decoration: none;
   font-weight: bold;
   font-size: 15px;
-  padding:10px;
+  padding: 10px;
   opacity: 0.8;
 }
 
-.shop-button:hover{
+.shop-button:hover {
   opacity: 0.9;
 }
 
 .content-grid {
   display: grid;
-  grid-template-columns: repeat(4,auto);
-  grid-template-rows: repeat(2,auto);
-  grid-gap : 10px;
+  grid-template-columns: repeat(4, auto);
+  grid-template-rows: repeat(2, auto);
+  grid-gap: 10px;
 }
 
-.surface-deals{
-  background-image: url("assets/img/slide1.png");
-  grid-column-start: 1;
-  grid-column-end : 5;
+.surface-deals {
+  height: 400px;
+  width: 100%;
+  background: url("assets/img/slide1.png") no-repeat center center/cover;
+  grid-column: 1 /span 4;
 }
