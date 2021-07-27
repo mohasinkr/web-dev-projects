@@ -71,4 +71,6 @@ body {
   width: 100%;
   background: url("assets/img/slide1.png") no-repeat center center/cover;
   grid-column: 1 /span 4;
+  text-align : center;
+  padding-top:200px;
 }
