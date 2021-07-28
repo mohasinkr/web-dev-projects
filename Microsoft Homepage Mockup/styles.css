@@ -73,13 +73,19 @@ body {
   width: 100%;
   background: url("assets/img/slide1.png") no-repeat center center/cover;
   grid-column: 1 /span 4;
-  text-align : center;
+  text-align: center;
 }
 
-.main-content>h2{
-  margin-top:200px;
+.main-content>h2 {
+  margin-top: 200px;
 }
 
-.main-content>p{
-  margin-top:10px;
+.main-content>p {
+  margin-top: 10px;
+}
+
+.content-grid>div>a {
+  color: #0067b8;
+  font-weight: 700;
+  text-decoration: none;
 }
