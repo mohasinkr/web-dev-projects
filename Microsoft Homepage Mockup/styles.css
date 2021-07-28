@@ -45,7 +45,7 @@ body {
   text-underline-offset: 8px;
 }
 
-.shop-button {
+#shop-button {
   margin-top: 30px;
   display: inline-block;
   background-color: black;
@@ -57,7 +57,7 @@ body {
   opacity: 0.8;
 }
 
-.shop-button:hover {
+#shop-button:hover {
   opacity: 0.9;
 }
 
@@ -86,6 +86,6 @@ body {
 
 .content-grid>div>a {
   color: #0067b8;
-  font-weight: 700;
+  font-weight: bold;
   text-decoration: none;
 }
