@@ -23,9 +23,10 @@ body {
 }
 
 .menu-items {
+  font-size: 13px;
   position: absolute;
   top: 2px;
-  left: 155px;
+  left: 140px;
 }
 
 .menu-items>li {
@@ -45,6 +46,7 @@ body {
 }
 
 .shop-button {
+  margin-top: 30px;
   display: inline-block;
   background-color: black;
   color: white;
@@ -66,11 +68,18 @@ body {
   grid-gap: 10px;
 }
 
-.surface-deals {
+.main-content {
   height: 400px;
   width: 100%;
   background: url("assets/img/slide1.png") no-repeat center center/cover;
   grid-column: 1 /span 4;
   text-align : center;
-  padding-top:200px;
+}
+
+.main-content>h2{
+  margin-top:200px;
+}
+
+.main-content>p{
+  margin-top:10px;
 }
