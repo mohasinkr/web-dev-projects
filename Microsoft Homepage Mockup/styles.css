@@ -102,3 +102,17 @@ body {
   font-size: 15px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+#join-now-button {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  background-color: black;
+  padding: 10px;
+  margin-top: 10px;
+  opacity: 0.8;
+}
+
+#join-now-button:hover{
+  opacity: 0.9;
+}
