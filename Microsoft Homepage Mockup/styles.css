@@ -66,6 +66,8 @@ body {
   grid-template-columns: repeat(4, auto);
   grid-template-rows: repeat(2, auto);
   grid-gap: 10px;
+  font-size: 15px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .main-content {
@@ -85,7 +87,18 @@ body {
 }
 
 .content-grid>div>a {
+  display: block;
   color: #0067b8;
   font-weight: bold;
   text-decoration: none;
+  margin-top: 10px;
+}
+
+.second-content-grid {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-template-rows: repeat(2, auto);
+  grid-gap: 10px;
+  font-size: 15px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
