@@ -78,7 +78,7 @@ body {
   font-size: 15px;
   text-decoration: none;
   padding: 10px;
-  margin-top: 10px;
+  margin-top: 20px;
   opacity: 0.8;
 }
 
@@ -95,7 +95,7 @@ body {
   margin-top: 10px;
 }
 
-.content-grid {
+.section2 {
   margin-top: 50px;
   display: grid;
   grid-template-columns: repeat(4, auto);
@@ -112,6 +112,13 @@ body {
   grid-column: 1/span 4;
 }
 
-.banner-image2>h3 {
-  margin-top: 100px;
+.textbox1 {
+  margin: 40px 0 0 30px;
+  display: block;
+  height: 50px;
+  width: 40%;
+}
+
+.textbox1 p{
+  margin-top:10px;
 }
