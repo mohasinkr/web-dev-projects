@@ -59,6 +59,15 @@ body {
   margin-bottom: 5px;
 }
 
+.content-grid .link-text {
+  cursor: pointer;
+  color: #0067b8;
+  display: inline-block;
+  font-weight: bold;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
 .main-content {
   height: 400px;
   width: 100%;
@@ -89,25 +98,6 @@ body {
 
 .btn:hover {
   opacity: 0.8;
-}
-
-.content-grid .link-text {
-  cursor: pointer;
-  color: #0067b8;
-  display: inline-block;
-  font-weight: bold;
-  text-decoration: none;
-  margin-top: 10px;
-}
-
-.xbox-gamepass {
-  margin-top: 50px;
-  display: grid;
-  grid-template-columns: repeat(4, auto);
-  grid-template-rows: repeat(2, auto);
-  grid-gap: 10px;
-  font-size: 15px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .gamepass-content {
