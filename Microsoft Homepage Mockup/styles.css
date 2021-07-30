@@ -54,6 +54,10 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.content-grid h3 {
+  margin-top: 20px;
+}
+
 .main-content {
   height: 400px;
   width: 100%;
@@ -77,13 +81,13 @@ body {
   font-weight: bold;
   font-size: 15px;
   text-decoration: none;
-  padding: 10px;
+  padding: 10px 15px 10px 15px;
   margin-top: 20px;
-  opacity: 0.8;
+  opacity: 0.9;
 }
 
 .btn:hover {
-  opacity: 0.9;
+  opacity: 0.8;
 }
 
 .content-grid .link-text {
@@ -119,6 +123,6 @@ body {
   width: 40%;
 }
 
-.textbox1 p{
-  margin-top:10px;
+.textbox1 p {
+  margin-top: 10px;
 }
