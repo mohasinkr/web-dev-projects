@@ -1,0 +1,14 @@
+body {
+  background-color: black;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.content {
+  color: aquamarine;
+  font-size: 20px;
+}
+
+.content li>a, .content li {
+  list-style: square;
+  text-decoration: none;
+}
