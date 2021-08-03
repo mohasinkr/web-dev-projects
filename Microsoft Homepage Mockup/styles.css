@@ -2,7 +2,6 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-
 }
 
 body {
@@ -116,4 +115,10 @@ body {
 .gamepass-content>p, .gamepass-content>h3 {
   margin: 20px 0 0 20px;
   width: 40%;
+}
+
+.carbon-image img {
+  margin-top: 50px;
+  width: 100%;
+  height: 350px;
 }
