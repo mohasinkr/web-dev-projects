@@ -117,8 +117,24 @@ body {
   width: 40%;
 }
 
-.carbon-image img {
-  margin-top: 50px;
-  width: 100%;
+.carbon-image-box {
+  margin-top: 20px;
   height: 350px;
+  background: url("assets/img/carbon.jpg") no-repeat center center/cover;
+}
+
+.carbon-data .content {
+  color: white;
+  padding: 100px 0 0 50px;
+  width: 55%;
+}
+
+.carbon-data a {
+  display: inline-block;
+  margin-top: 20px;
+  color: black;
+  background-color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px;
 }
