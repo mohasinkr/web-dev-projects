@@ -9,7 +9,7 @@ body {
 }
 
 .container {
-  width: 80%;
+  width: 75%;
   margin: auto;
   padding-top: 20px;
 }
@@ -63,11 +63,14 @@ body {
 
 .content-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 1fr auto;
+  grid-template-columns: repeat(4, auto);
   grid-gap: 20px;
   font-size: 15px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+img {
+  max-width: 100%;
 }
 
 .content-grid h3 {
@@ -107,7 +110,7 @@ body {
   height: 350px;
   background: url("assets/img/xbox.png") no-repeat center center/cover;
   grid-column: 1/span 4;
-  padding : 50px 0 0 20px;
+  padding-top: 50px;
 }
 
 .gamepass-content>a {
@@ -159,8 +162,8 @@ footer {
 
 .footer-grid {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(5, 1fr);
+  grid-template-columns: repeat(6, auto);
+  grid-template-rows: repeat(5, auto);
 }
 
 .footer-flex {
@@ -179,11 +182,7 @@ footer {
 
 @media (max-width: 700px) {
   .content-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .main-content {
-    grid-column: 1 /span 2;
-    text-align: center;
+    grid-template-columns: repeat(2, auto);
+    overflow: hidden;
   }
 }
