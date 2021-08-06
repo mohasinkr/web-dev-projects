@@ -8,6 +8,11 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+a {
+  text-decoration: none;
+  color: #262626;
+}
+
 .container {
   width: 90%;
   max-width: 1100px;
@@ -164,13 +169,30 @@ footer {
 .footer-grid {
   display: grid;
   grid-template-columns: repeat(6, auto);
-  grid-template-rows: repeat(5, auto);
+  grid-template-rows: repeat(6, auto);
+  justify-items: center;
+  align-items: center;
+}
+
+.footer-grid h3 {
+  color: #616161;
+}
+
+.footer-grid li {
+  font-size: 12px;
+  list-style: none;
+  line-height: 2.8;
 }
 
 .footer-flex {
-  display: inline-flex;
+  display: flex;
   flex-flow: row wrap;
   align-items: center;
+  margin-top: 50px;
+}
+
+.footer-flex p {
+  margin-left: 80px;
 }
 
 .footer-flex a {
