@@ -1,0 +1,27 @@
+
+
+.container {
+  background-color: purple;
+}
+
+.navbar{
+  display:flex;
+  flex-flow : row nowrap;
+}
+
+a{
+  text-align: center;
+}
+
+span{
+  opacity: 0;
+}
+
+span:hover{
+  opacity: 1;
+  color:white;
+}
+
+ img {
+   filter: invert(1);
+}
