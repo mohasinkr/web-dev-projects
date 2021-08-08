@@ -1,27 +1,17 @@
-
-
-.container {
-  background-color: purple;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
-.navbar{
-  display:flex;
-  flex-flow : row nowrap;
-}
-
-a{
+a {
+  display: inline-block;
+  margin-right: 20px;
   text-align: center;
+  color: black !important;
+  transition: transform 2s linear !important;
 }
 
-span{
-  opacity: 0;
-}
-
-span:hover{
-  opacity: 1;
-  color:white;
-}
-
- img {
-   filter: invert(1);
+a:hover {
+  transform: translateX(10px);
 }
