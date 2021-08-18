@@ -23,7 +23,7 @@ h1 {
 }
 
 .navbar {
-  padding: 0 4.5rem;
+  padding: 0 0 4.5rem;
 }
 
 .navbar-brand {
@@ -36,8 +36,12 @@ h1 {
   padding-left: 18px;
 }
 
-.nav-link{
-  font-size : 1.2rem;
-  font-family : "Montserrat";
+.nav-link {
+  font-size: 1.2rem;
+  font-family: "Montserrat";
   font-weight: 300;
+}
+
+.download-button {
+  margin: 2% 2% 5% 0;
 }
