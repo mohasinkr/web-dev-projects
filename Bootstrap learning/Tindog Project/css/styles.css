@@ -19,7 +19,8 @@ h1 {
 }
 
 .col-lg-6 img {
-  transform: rotate(20deg);
+  transform: rotate(25deg);
+  width: 60%;
 }
 
 .navbar {
@@ -44,4 +45,9 @@ h1 {
 
 .download-button {
   margin: 2% 2% 5% 0;
+}
+
+.feature-icons {
+  color: #ef8172;
+  
 }
