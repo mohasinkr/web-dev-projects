@@ -63,6 +63,13 @@ h3 {
   padding-top: 10px;
 }
 
+h2 {
+  font-family: "Montserrat";
+  line-height: 1.5;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
 .feature-box {
   text-align: center;
   padding: 5% 3% 5% 5%;
@@ -70,4 +77,11 @@ h3 {
 
 .features p {
   color: #8f8f8f;
+}
+
+#testimonials {
+  padding: 7% 15%;
+  text-align: center;
+  background-color: #ef8172;
+  color: #fff;
 }
