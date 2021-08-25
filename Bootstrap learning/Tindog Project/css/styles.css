@@ -50,8 +50,6 @@ h1 {
 .feature-icons {
   color: #ef8172;
   font-size: 50px;
-  padding-left: 60px;
-  padding-bottom: 10px;
 }
 
 .feature-icons:hover {
@@ -62,9 +60,14 @@ h3 {
   font-family: "Montserrat";
   font-weight: 700;
   font-size: 1.5rem;
+  padding-top: 10px;
+}
+
+.feature-box {
+  text-align: center;
+  padding: 5% 3% 5% 5%;
 }
 
 .features p {
   color: #8f8f8f;
-  text-align: center;
 }
