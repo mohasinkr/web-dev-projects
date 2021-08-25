@@ -85,3 +85,21 @@ h2 {
   background-color: #ef8172;
   color: #fff;
 }
+
+#testimonials img {
+  width: 10%;
+  border-radius: 100%;
+  margin: 20px;
+}
+
+#press {
+  width: 100%;
+  text-align: center;
+  background-color: #ef8172;
+  padding-bottom: 20px;
+}
+
+.press-logo {
+  margin: 20px 20px 50px;
+  width: 15%;
+}
