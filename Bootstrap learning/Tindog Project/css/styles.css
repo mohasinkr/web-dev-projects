@@ -7,11 +7,6 @@ body {
   color: #fff;
 }
 
-#title>img {
-  position: absolute;
-  z-index: -1;
-}
-
 .container-fluid {
   padding: 3% 15%;
 }
@@ -23,9 +18,11 @@ h1 {
   line-height: 1.5;
 }
 
-.col-lg-6 img {
+.title-img {
   transform: rotate(25deg);
   width: 60%;
+  z-index: -1;
+  position: absolute;
 }
 
 .navbar {
@@ -87,6 +84,8 @@ h2 {
 #features {
   padding: 7% 15%;
   background-color: #fff;
+  position: relative;
+  z-index: 1;
 }
 
 #testimonials {
