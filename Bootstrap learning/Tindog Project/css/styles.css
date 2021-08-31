@@ -7,6 +7,11 @@ body {
   color: #fff;
 }
 
+#title>img {
+  position: absolute;
+  z-index: -1;
+}
+
 .container-fluid {
   padding: 3% 15%;
 }
@@ -77,6 +82,11 @@ h2 {
 
 .features p {
   color: #8f8f8f;
+}
+
+#features {
+  padding: 7% 15%;
+  background-color: #fff;
 }
 
 #testimonials {
