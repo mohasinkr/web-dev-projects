@@ -1,0 +1,10 @@
+.buy-now-nav {
+    margin-top: 8px;
+    line-height: 24px;
+    height: 24px;
+    background-color: #ff6700;
+    color: white!important;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 0 12px;
+}
