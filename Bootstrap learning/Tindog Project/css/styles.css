@@ -19,10 +19,9 @@ h1 {
 }
 
 .title-img {
-  transform: rotate(25deg);
+  object-fit: cover;
   width: 60%;
-  z-index: -1;
-  position: absolute;
+  transform: rotate(25deg);
 }
 
 .navbar {
