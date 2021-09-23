@@ -17,10 +17,14 @@ h1 {
   font-weight: 900;
   line-height: 1.5;
 }
+.cropped-dog{
+  margin-bottom:-200px;
+}
 
 .title-img {
+  width:60%;
   object-fit: cover;
-  width: 60%;
+  object-position: 20% 20%;
   transform: rotate(25deg);
 }
 
