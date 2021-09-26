@@ -9,18 +9,14 @@
   padding: 0 12px;
 }
 
-.mi-logo-bg {
-  height: 56px;
-  width: 56px;
-}
-
 .mi-logo {
-  
-}
-
-#mi-brand {
-  display: inline-block;
+  position: relative;
   width: 56px;
   height: 56px;
-  background-color: red;
+  bottom: 5px;
+}
+
+.separator {
+  color: #8c8c8c;
+  font-size: 16.8px;
 }
