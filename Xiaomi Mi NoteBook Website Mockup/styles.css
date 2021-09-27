@@ -20,3 +20,13 @@
   color: #8c8c8c;
   font-size: 16.8px;
 }
+
+.hero-section{
+  background-color: black;
+}
+
+.hero-image{
+  height:50%;
+  width:50%;
+  float:right;
+}
