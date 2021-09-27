@@ -23,10 +23,14 @@
 
 .hero-section{
   background-color: black;
+  height:500px;
+  position: relative;
 }
 
-.hero-image{
+.hero-image>img{
+  margin-top:60px;
+  position: absolute;
+  right:50px;
   height:50%;
   width:50%;
-  float:right;
 }
