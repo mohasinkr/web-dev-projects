@@ -10,10 +10,9 @@
 }
 
 .mi-logo {
-  position: relative;
   width: 56px;
   height: 56px;
-  bottom: 5px;
+  margin-bottom: 5px;
 }
 
 .separator {
@@ -22,11 +21,6 @@
 }
 
 .hero-section{
-  background-color: black;
-  height:500px;
-}
-
-.hero-image>img{
-  width: 100%;
-  height:100%;
+  background: url("assets/img/section01.jpg") no-repeat cover;
+  
 }
