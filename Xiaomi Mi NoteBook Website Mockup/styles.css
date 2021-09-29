@@ -1,3 +1,7 @@
+body {
+  margin-top: 100px;
+}
+
 .buy-now-nav {
   margin-top: 8px;
   line-height: 24px;
@@ -20,7 +24,6 @@
   font-size: 16.8px;
 }
 
-.hero-section{
-  background: url("assets/img/section01.jpg") no-repeat cover;
-  
+.hero-section {
+  background: url("assets/img/section01.jpg") no-repeat center center fixed;
 }
