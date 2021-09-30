@@ -47,6 +47,13 @@ body {
   font-family: CamphorPro-Bold, sans-serif;
   font-size: 48px;
   font-weight: 700;
+  background: linear-gradient(90deg,#bbd0eb,#f6f9fc);
+  background-clip: text;
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent; 
 }
 
 .subtitle-gradient {
