@@ -3,6 +3,17 @@ body {
   background-color: black;
 }
 
+@font-face {
+  font-family: CamphorPro-Bold;
+  src: url("assets/fonts/CamphorPro-Bold.woff");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: CamphorPro-Light;
+  src: url("assets/fonts/CamphorPro-Light.woff");
+}
+
 .buy-now-nav {
   margin-top: 8px;
   line-height: 24px;
@@ -33,9 +44,12 @@ body {
 }
 
 .title-gradient {
+  font-family: CamphorPro-Bold, sans-serif;
   font-size: 48px;
+  font-weight: 700;
 }
 
-.subtitle-gradient{
+.subtitle-gradient {
+  font-family: CamphorPro-Light, sans-serif;
   font-size: 23px;
 }
