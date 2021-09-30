@@ -1,5 +1,6 @@
 body {
   margin-top: 100px;
+  background-color: black;
 }
 
 .buy-now-nav {
@@ -25,5 +26,16 @@ body {
 }
 
 .hero-section {
-  background: url("assets/img/section01.jpg") no-repeat center center fixed;
+  background-image: url("assets/img/section01.jpg");
+  background-size: cover;
+  color: white;
+  height: 580px;
+}
+
+.title-gradient {
+  font-size: 48px;
+}
+
+.subtitle-gradient{
+  font-size: 23px;
 }
