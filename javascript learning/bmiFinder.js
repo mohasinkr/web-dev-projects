@@ -10,3 +10,4 @@ var mass = 65;
 var height = 1.75;
 
 var bmi = bmiCalculator(mass,height);
+console.log(bmi);
