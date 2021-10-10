@@ -1,0 +1,56 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+body {
+  background-image: linear-gradient(120deg, #f6d634, #fda085);
+  font-family: Poppins;
+}
+
+header {
+  color: white;
+  font-size: 64px;
+  font-weight: 400;
+}
+
+form input,
+form button {
+  padding: 0.5rem;
+  font-size: 2rem;
+  border: none;
+  background-color: white;
+}
+
+form,
+header {
+  min-height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.todo-input {
+  border-radius: 2px;
+}
+
+.todo-input:focus{
+    outline: none;
+}
+
+.submit-button {
+  position: relative;
+  right: 2px;
+  cursor: pointer;
+  color: lightgreen;
+  transition: all 0.3s linear;
+}
+
+.submit-button:hover {
+  background-color: aquamarine;
+  color: white;
+}
+
+.category {
+  appearance: none;
+}

@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
         integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-        
+
     <title>Todo List App</title>
 </head>
 
@@ -31,7 +31,19 @@
         <button type="submit" class="submit-button">
             <i class="fas fa-check"></i>
         </button>
+
+        <select name="category" id="category">
+            <option value="all">All</option>
+            <option value="completed">Completed</option>
+            <option value="incomplete">Incomplete</option>
+        </select>
     </form>
+
+    <div class="todo-container">
+        <ul class="todolist-items">
+        </ul>
+    </div>
+
     <script src="app.js"></script>
 </body>
 
