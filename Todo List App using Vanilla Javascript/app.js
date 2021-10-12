@@ -9,14 +9,17 @@ function addTodo(event) {
   console.log("hello!");
 
   //creating a todo div inside ul todo-items class
-
   const todoDiv = document.createElement("div");
   todoDiv.classList.add("todo");
 
   const newTodo = document.createElement("li");
   newTodo.classList.add("todo-items");
-  newTodo.innerHTML = "HEY";
+//   newTodo.innerHTML = "HEY";
   todoDiv.appendChild(newTodo);
+
+  const getText = todoInput.value;
+  newTodo.innerHTML = getText;
+
 
   //adding the task complete button
   const completeButton = document.createElement("button");
@@ -26,7 +29,7 @@ function addTodo(event) {
 
   //adding the trash button...
   const trashButton = document.createElement("button");
-  trashButton.innerHTML = '<i class="fas fa-trash></i>';
+  trashButton.innerHTML = '<i class="fas fa-trash"></i>';
   trashButton.classList.add("trash-btn");
   todoDiv.appendChild(trashButton);
 
