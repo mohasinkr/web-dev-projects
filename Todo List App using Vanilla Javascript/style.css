@@ -34,8 +34,8 @@ header {
   border-radius: 2px;
 }
 
-.todo-input:focus{
-    outline: none;
+.todo-input:focus {
+  outline: none;
 }
 
 .submit-button {
@@ -54,3 +54,44 @@ header {
 .category {
   appearance: none;
 }
+
+.todo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.todo-items {
+  list-style: none;
+}
+
+.todo{
+  background-color:white;
+  margin : 0.5rem;
+  color:black;
+  font-size:1.5rem;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.todo li{
+  flex:1;
+}
+
+.complete-btn {
+  font-size: 1.5rem;
+  background-color: lightgreen;
+  color: white;
+  border: none;
+  padding: 0.5rem;
+}
+
+.trash-btn {
+  color: white;
+  background-color: red;
+  font-size: 1.5rem;
+  border: none;
+  padding:0.5rem;
+}
+
