@@ -4,7 +4,7 @@
 }
 
 body {
-  background-image: linear-gradient(120deg, #f6d634, #fda085);
+  background-image: linear-gradient(to right, #f6d634, #fda085);
   font-family: Poppins;
 }
 
@@ -63,6 +63,7 @@ header {
 
 .todo-items {
   list-style: none;
+  min-width: 25%;
 }
 
 .todo{
@@ -71,6 +72,7 @@ header {
   color:black;
   font-size:1.5rem;
   display:flex;
+  flex-direction: column`;
   justify-content: space-between;
   align-items: center;
 }
@@ -94,4 +96,5 @@ header {
   border: none;
   padding:0.5rem;
 }
+
 
