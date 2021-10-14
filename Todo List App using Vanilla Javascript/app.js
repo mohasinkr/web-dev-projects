@@ -8,6 +8,7 @@ function addTodo(event) {
   event.preventDefault(); //prevents the submit action ...
   console.log("hello!");
   const getText = todoInput.value;
+
   //only adds the elements after if the input tag is not null....
   if (getText != "") {
     //creating a todo div inside ul todo-items class
@@ -18,9 +19,10 @@ function addTodo(event) {
     newTodo.classList.add("todo-items");
     //   newTodo.innerHTML = "HEY";
     todoDiv.appendChild(newTodo);
+    todoList.addEventListener('click',deleteCheck);
 
     newTodo.innerHTML = getText;
-    todoInput.value = "";
+    todoInput.value = ""; //clearing out the input field 
 
     //adding the task complete button
     const completeButton = document.createElement("button");
@@ -33,8 +35,12 @@ function addTodo(event) {
     trashButton.innerHTML = '<i class="fas fa-trash"></i>';
     trashButton.classList.add("trash-btn");
     todoDiv.appendChild(trashButton);
-
     //adding to the main to the <ul> tag...
     todoList.appendChild(todoDiv);
+
   }
+}
+
+function deleteCheck(event){
+  console.log(event.target);
 }
