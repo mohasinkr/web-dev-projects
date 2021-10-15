@@ -1,14 +1,24 @@
 body {
-  background-color: black;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #172774;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .content {
-  color: aquamarine;
+  color: #77d970;
   font-size: 20px;
 }
 
-.content li>a, .content li {
+.content > h3 {
+  text-decoration: underline;
+}
+
+.list-items li,
+.list-items li a {
+  color: white;
   list-style: square;
   text-decoration: none;
+}
+
+.list-items a:hover {
+  color: #ff0075;
 }
