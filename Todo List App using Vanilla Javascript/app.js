@@ -9,20 +9,22 @@ function addTodo(event) {
   console.log("hello!");
   const getText = todoInput.value;
 
-  //only adds the elements after if the input tag is not null....
+  //only adds the elements if the input tag is not null....
   if (getText != "") {
     //creating a todo div inside ul todo-items class
     const todoDiv = document.createElement("div");
     todoDiv.classList.add("todo");
 
-    const newTodo = document.createElement("li");
-    newTodo.classList.add("todo-items");
-    //   newTodo.innerHTML = "HEY";
-    todoDiv.appendChild(newTodo);
-    todoList.addEventListener('click',deleteCheck);
+    const listItem = document.createElement("li");
+    listItem.classList.add("todo-items");
 
-    newTodo.innerHTML = getText;
-    todoInput.value = ""; //clearing out the input field 
+    todoDiv.appendChild(listItem);
+
+    listItem.innerHTML = getText;
+    todoInput.value = ""; //clearing out the input field
+
+    //adding an event handler to all the list items...
+    todoList.addEventListener("click", deleteCheck);
 
     //adding the task complete button
     const completeButton = document.createElement("button");
@@ -37,10 +39,13 @@ function addTodo(event) {
     todoDiv.appendChild(trashButton);
     //adding to the main to the <ul> tag...
     todoList.appendChild(todoDiv);
-
   }
 }
 
-function deleteCheck(event){
-  console.log(event.target);
+function deleteCheck(event) {
+  const targetItem = event.target;
+  console.log(targetItem);
+  if (targetItem.classList[0] === "trash-btn") {
+    targetItem.parentElement.remove();
+  }
 }
