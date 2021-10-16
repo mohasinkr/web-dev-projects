@@ -63,7 +63,7 @@ header {
 
 .todo-items {
   list-style: none;
-  min-width: 25%;
+  min-width: 30%;
 }
 
 .todo{
@@ -72,7 +72,6 @@ header {
   color:black;
   font-size:1.5rem;
   display:flex;
-  flex-direction: column`;
   justify-content: space-between;
   align-items: center;
 }
@@ -88,7 +87,6 @@ header {
   border: none;
   padding: 0.5rem;
 }
-
 .trash-btn {
   color: white;
   background-color: red;
@@ -101,4 +99,8 @@ header {
   pointer-events: none;
 }
 
+.strike-effect{
+  text-decoration: line-through;
+  opacity: 0.5;
+}
 

@@ -24,7 +24,7 @@ function addTodo(event) {
     todoInput.value = ""; //clearing out the input field
 
     //adding an event handler to all the list items...
-    todoList.addEventListener("click", deleteCheck);
+    todoList.addEventListener("click", actionCheck);
 
     //adding the task complete button
     const completeButton = document.createElement("button");
@@ -42,10 +42,12 @@ function addTodo(event) {
   }
 }
 
-function deleteCheck(event) {
+function actionCheck(event) {
   const targetItem = event.target;
   console.log(targetItem);
   if (targetItem.classList[0] === "trash-btn") {
     targetItem.parentElement.remove();
+  } else if (targetItem.classList[0] === "complete-btn") {
+    targetItem.parentElement.classList.add("strike-effect");
   }
 }
