@@ -44,10 +44,11 @@ function addTodo(event) {
 
 function actionCheck(event) {
   const targetItem = event.target;
-  console.log(targetItem);
+  const parent = targetItem.parentElement;
   if (targetItem.classList[0] === "trash-btn") {
-    targetItem.parentElement.remove();
+    parent.classList.add("clear-effect");
+    // parent.remove();
   } else if (targetItem.classList[0] === "complete-btn") {
-    targetItem.parentElement.classList.add("strike-effect");
+    parent.classList.toggle("strike-effect");
   }
 }
