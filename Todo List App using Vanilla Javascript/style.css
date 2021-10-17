@@ -42,12 +42,16 @@ header {
   position: relative;
   right: 2px;
   cursor: pointer;
-  color: lightgreen;
+  color:greenyellow;
   transition: all 0.3s linear;
 }
 
+.submit-button i{
+  font-size:27px;
+}
+
 .submit-button:hover {
-  background-color: aquamarine;
+  background-color:aquamarine;
   color: white;
 }
 
@@ -64,6 +68,7 @@ header {
 .todo-items {
   list-style: none;
   min-width: 30%;
+  padding: 0 1rem;
 }
 
 .todo{
@@ -74,6 +79,7 @@ header {
   display:flex;
   justify-content: space-between;
   align-items: center;
+  transition: all 0.5s ease;
 }
 
 .todo li{
@@ -104,3 +110,6 @@ header {
   opacity: 0.5;
 }
 
+.clear-effect{
+  opacity:0;
+}
