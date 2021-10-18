@@ -47,7 +47,7 @@ function actionCheck(event) {
   const parent = targetItem.parentElement;
   if (targetItem.classList[0] === "trash-btn") {
     parent.classList.add("clear-effect");
-    // parent.remove();
+    parent.addEventListener("transitionend", () => parent.remove());
   } else if (targetItem.classList[0] === "complete-btn") {
     parent.classList.toggle("strike-effect");
   }
