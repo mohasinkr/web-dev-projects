@@ -113,3 +113,9 @@ header {
 .clear-effect{
   opacity:0;
 }
+
+.selection-menu{
+  outline: none;
+  border: none;
+  width:2rem;
+}
