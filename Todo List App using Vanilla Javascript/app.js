@@ -49,6 +49,6 @@ function actionCheck(event) {
     parent.classList.add("clear-effect");
     parent.addEventListener("transitionend", () => parent.remove());
   } else if (targetItem.classList[0] === "complete-btn") {
-    parent.classList.toggle("strike-effect");
+    parent.classList.toggle('strike-effect')
   }
-}
+} 
