@@ -44,7 +44,7 @@ header {
   cursor: pointer;
   color: greenyellow;
   transition: all 0.3s linear;
-}
+} 
 
 .submit-button i {
   font-size: 27px;
@@ -122,20 +122,28 @@ select {
   width: 10rem;
   cursor: pointer;
   color: #fda085;
-  padding-left: 10px;
+  padding: 1rem;
 }
 
 .selection-menu {
   position: relative;
   margin: 1rem;
   overflow: hidden;
-  color: #fda085;
 }
 
 .selection-menu::after {
+  color:white;
+  background-color: #ff6f47;
   content: "\25BC";
   position: absolute;
-  top: 1px;
+  top: 0;
   right: 0;
   pointer-events: none;
+  padding: 1rem;
+  transition: all 0.3s linear;
+}
+
+.selection-menu:hover::after{
+  background-color: white;
+  color:lightgreen;
 }
