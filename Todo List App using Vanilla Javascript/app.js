@@ -1,8 +1,10 @@
 const todoInput = document.querySelector(".todo-input");
 const todoButton = document.querySelector(".submit-button");
 const todoList = document.querySelector(".todo-items");
+const dropDown = document.querySelector(".category-filter");
 
 todoButton.addEventListener("click", addTodo);
+dropDown.addEventListener("change", categoryView);
 
 function addTodo(event) {
   event.preventDefault(); //prevents the submit action ...
@@ -37,6 +39,9 @@ function addTodo(event) {
     trashButton.innerHTML = '<i class="fas fa-trash"></i>';
     trashButton.classList.add("trash-btn");
     todoDiv.appendChild(trashButton);
+
+    //adding the incomplete class to the todoitem..
+    todoDiv.classList.add("incomplete");
     //adding to the main to the <ul> tag...
     todoList.appendChild(todoDiv);
   }
@@ -49,6 +54,16 @@ function actionCheck(event) {
     parent.classList.add("clear-effect");
     parent.addEventListener("transitionend", () => parent.remove());
   } else if (targetItem.classList[0] === "complete-btn") {
-    parent.classList.toggle('strike-effect')
+    parent.classList.toggle("strike-effect");
+    parent.classList.remove("incomplete");
+    parent.classList.add("completed");
   }
-} 
+}
+
+function categoryView(event) {
+  const targetValue = event.target.value;
+  if (targetValue == "all") {
+  } else if (targetValue == "completed") {
+  } else if (targetValue == "incomplete") {
+  }
+}
