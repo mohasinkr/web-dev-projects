@@ -40,8 +40,6 @@ function addTodo(event) {
     trashButton.classList.add("trash-btn");
     todoDiv.appendChild(trashButton);
 
-    //adding the incomplete class to the todoitem..
-    todoDiv.classList.add("incomplete");
     //adding to the main to the <ul> tag...
     todoList.appendChild(todoDiv);
   }
@@ -54,21 +52,33 @@ function actionCheck(event) {
     parent.classList.add("clear-effect");
     parent.addEventListener("transitionend", () => parent.remove());
   } else if (targetItem.classList[0] === "complete-btn") {
-    parent.classList.add("completed");
+    parent.classList.toggle("completed");
     parent.classList.toggle("strike-effect");
-    parent.classList.toggle("incomplete");
-    if(parent.classList.contains("incomplete")){
-      parent.classList.remove("completed")
-    }
   }
 }
 
 function categoryView(event) {
   const targetValue = event.target.value;
-  if (targetValue == "all") {
-  } else if (targetValue == "completed") {
-  } else if (targetValue == "incomplete") {
-  }
+  const todos = todoList.childNodes;
+
+  todos.forEach((todo) => {
+    switch (targetValue) {
+      case "all":
+        todo.style.display = "flex";
+        break;
+
+      case "completed":
+        if (todo.classList.contains("completed")) todo.style.display = "flex";
+        else todo.style.display = "none";
+        break;
+
+      case "incomplete":
+        if (!todo.classList.contains("completed")) todo.style.display = "flex";
+        else todo.style.display = "none";
+        break;
+
+      default:
+        todo.style.display = "none";
+    }
+  });
 }
-
-
