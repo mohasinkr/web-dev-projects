@@ -54,9 +54,12 @@ function actionCheck(event) {
     parent.classList.add("clear-effect");
     parent.addEventListener("transitionend", () => parent.remove());
   } else if (targetItem.classList[0] === "complete-btn") {
-    parent.classList.toggle("strike-effect");
-    parent.classList.remove("incomplete");
     parent.classList.add("completed");
+    parent.classList.toggle("strike-effect");
+    parent.classList.toggle("incomplete");
+    if(parent.classList.contains("incomplete")){
+      parent.classList.remove("completed")
+    }
   }
 }
 
@@ -67,3 +70,5 @@ function categoryView(event) {
   } else if (targetValue == "incomplete") {
   }
 }
+
+
