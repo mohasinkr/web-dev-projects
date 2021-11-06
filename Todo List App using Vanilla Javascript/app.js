@@ -1,3 +1,5 @@
+"use strict"
+
 const todoInput = document.querySelector(".todo-input");
 const todoButton = document.querySelector(".submit-button");
 const todoList = document.querySelector(".todo-items");
@@ -60,7 +62,7 @@ function actionCheck(event) {
 function categoryView(event) {
   const targetValue = event.target.value;
   const todos = todoList.childNodes;
-
+ 
   todos.forEach((todo) => {
     switch (targetValue) {
       case "all":
