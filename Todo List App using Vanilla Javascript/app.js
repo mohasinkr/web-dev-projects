@@ -1,4 +1,4 @@
-"use strict"
+"use strict";
 
 const todoInput = document.querySelector(".todo-input");
 const todoButton = document.querySelector(".submit-button");
@@ -44,6 +44,7 @@ function addTodo(event) {
 
     //adding to the main to the <ul> tag...
     todoList.appendChild(todoDiv);
+    localStorage.setItem("items", listItem);
   }
 }
 
@@ -62,7 +63,7 @@ function actionCheck(event) {
 function categoryView(event) {
   const targetValue = event.target.value;
   const todos = todoList.childNodes;
- 
+
   todos.forEach((todo) => {
     switch (targetValue) {
       case "all":
@@ -83,4 +84,15 @@ function categoryView(event) {
         todo.style.display = "none";
     }
   });
+}
+
+function saveToLocal(todo) {
+  let todos;
+  if (localStorage.getItem(todos) === null) {
+    todos = [];
+  } else {
+    todos = JSON.parse(localStorage.getItem("savedata"));
+  }
+  todos.push(todo);
+  localStorage.setItem("savedata", JSON.stringify("todos"));
 }
