@@ -5,6 +5,7 @@ const todoButton = document.querySelector(".submit-button");
 const todoList = document.querySelector(".todo-items");
 const dropDown = document.querySelector(".category-filter");
 
+getAllTodos();
 todoButton.addEventListener("click", addTodo);
 dropDown.addEventListener("change", categoryView);
 
@@ -25,6 +26,9 @@ function addTodo(event) {
     todoDiv.appendChild(listItem);
 
     listItem.innerHTML = getText;
+    //adding all the todo-list to local storage...
+    saveToLocal(getText);
+
     todoInput.value = ""; //clearing out the input field
 
     //adding an event handler to all the list items...
@@ -42,9 +46,8 @@ function addTodo(event) {
     trashButton.classList.add("trash-btn");
     todoDiv.appendChild(trashButton);
 
-    //adding to the main to the <ul> tag...
+    //adding to the main <ul> tag...
     todoList.appendChild(todoDiv);
-    localStorage.setItem("items", listItem);
   }
 }
 
@@ -88,11 +91,53 @@ function categoryView(event) {
 
 function saveToLocal(todo) {
   let todos;
-  if (localStorage.getItem(todos) === null) {
+  if (localStorage.getItem("savedata") === null) {
     todos = [];
   } else {
     todos = JSON.parse(localStorage.getItem("savedata"));
   }
   todos.push(todo);
-  localStorage.setItem("savedata", JSON.stringify("todos"));
+  localStorage.setItem("savedata", JSON.stringify(todos));
 }
+
+function getAllTodos() {
+  let todos;
+  if (localStorage.getItem("savedata") === null) {
+    todos = [];
+  } else {
+    todos = JSON.parse(localStorage.getItem("savedata"));
+    todos.forEach((todo) => {
+      const todoDiv = document.createElement("div");
+      todoDiv.classList.add("todo");
+
+      const listItem = document.createElement("li");
+      listItem.classList.add("todo-items");
+
+      todoDiv.appendChild(listItem);
+
+      listItem.innerHTML = todo;
+      //adding all the todo-list to local storage...
+
+      //saveToLocal(getText);
+
+      //adding an event handler to all the list items...
+      todoList.addEventListener("click", actionCheck);
+
+      //adding the task complete button
+      const completeButton = document.createElement("button");
+      completeButton.innerHTML = '<i class="fas fa-check"></i>';
+      completeButton.classList.add("complete-btn");
+      todoDiv.appendChild(completeButton);
+
+      //adding the trash button...
+      const trashButton = document.createElement("button");
+      trashButton.innerHTML = '<i class="fas fa-trash"></i>';
+      trashButton.classList.add("trash-btn");
+      todoDiv.appendChild(trashButton);
+
+      //adding to the main <ul> tag...
+      todoList.appendChild(todoDiv);
+    });
+  }
+}
+  
