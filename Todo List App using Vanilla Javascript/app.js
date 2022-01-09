@@ -75,7 +75,7 @@ function removeFromLocal(index) {
     todos = [];
   } else {
     todos = JSON.parse(localStorage.getItem("savedata"));
-  } 
+  }
   todos.splice(todos.indexOf(listElement), 1);
   localStorage.setItem("savedata", JSON.stringify(todos));
 }
@@ -167,4 +167,11 @@ function getAllTodos() {
       todoList.appendChild(todoDiv);
     });
   }
+}
+
+function destroyAll() {
+  const tododiv = document.querySelectorAll(".todo");
+  for(let i=0;i<tododiv.length;i++)
+    tododiv[i].remove();
+  localStorage.clear();
 }
