@@ -4,7 +4,9 @@
 }
 
 body {
-  background-image: linear-gradient(to right, #f6d634, #fda085);
+  background-color: #FBDA61;
+background-image: linear-gradient(to right, #FBDA61 0%, #FF5ACD 100%);
+  /* background-image: linear-gradient(to right, #f6d634, #fda085); */
   font-family: Poppins;
 }
 
@@ -44,7 +46,7 @@ header {
   cursor: pointer;
   color: greenyellow;
   transition: all 0.3s linear;
-} 
+}
 
 .submit-button i {
   font-size: 27px;
@@ -132,7 +134,7 @@ select {
 }
 
 .selection-menu::after {
-  color:white;
+  color: white;
   background-color: #ff6f47;
   content: "\25BC";
   position: absolute;
@@ -143,7 +145,7 @@ select {
   transition: all 0.3s linear;
 }
 
-.selection-menu:hover::after{
+.selection-menu:hover::after {
   background-color: white;
-  color:lightgreen;
+  color: lightgreen;
 }
