@@ -5,13 +5,14 @@ const todoButton = document.querySelector(".submit-button");
 const todoList = document.querySelector(".todo-items");
 const dropDown = document.querySelector(".category-filter");
 
-getAllTodos();
+window.addEventListener("load", getAllTodos);
+
 todoButton.addEventListener("click", addTodo);
 dropDown.addEventListener("change", categoryView);
 
 function addTodo(event) {
   event.preventDefault(); //prevents the submit action ...
-  console.log("hello!");
+  // console.log("hello!");
   const getText = todoInput.value;
 
   //only adds the elements if the input tag is not null....
@@ -54,13 +55,30 @@ function addTodo(event) {
 function actionCheck(event) {
   const targetItem = event.target;
   const parent = targetItem.parentElement;
+
   if (targetItem.classList[0] === "trash-btn") {
     parent.classList.add("clear-effect");
+    removeFromLocal(targetItem);
     parent.addEventListener("transitionend", () => parent.remove());
   } else if (targetItem.classList[0] === "complete-btn") {
     parent.classList.toggle("completed");
     parent.classList.toggle("strike-effect");
   }
+  saveEffectsToLocal(targetItem);
+}
+
+function removeFromLocal(index) {
+  const parent = index.parentElement;
+  const listElement = parent.getElementsByTagName("LI")[0].innerText;
+  let todos;
+  if (localStorage.getItem("savedata") === null) {
+    todos = [];
+  } else {
+    todos = JSON.parse(localStorage.getItem("savedata"));
+  }
+  let elementIndex = todos.indexOf(listElement);
+  todos.splice(elementIndex, 1);
+  localStorage.setItem("savedata", JSON.stringify(todos));
 }
 
 function categoryView(event) {
@@ -91,6 +109,7 @@ function categoryView(event) {
 
 function saveToLocal(todo) {
   let todos;
+  //returns the value in JSON
   if (localStorage.getItem("savedata") === null) {
     todos = [];
   } else {
@@ -98,6 +117,16 @@ function saveToLocal(todo) {
   }
   todos.push(todo);
   localStorage.setItem("savedata", JSON.stringify(todos));
+}
+
+function saveEffectsToLocal(target) {
+  let strike_effect;
+  if (localStorage.getItem("effects") == null) {
+    strike_effect = [];
+  } else {
+    strike_effect = JSON.parse(localStorage.getItem("effects"));
+    strike_effect.forEach((item) => {});
+  }
 }
 
 function getAllTodos() {
@@ -140,4 +169,3 @@ function getAllTodos() {
     });
   }
 }
-  
