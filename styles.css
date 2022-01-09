@@ -1,10 +1,11 @@
 body {
-  background-color: #172774;
+  background-image: linear-gradient(to right, #2af598 0%, #009efd 100%);
+  /* background-color: #172774; */
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .content {
-  color: #77d970;
+  color: #ff0075;
   font-size: 20px;
 }
 
