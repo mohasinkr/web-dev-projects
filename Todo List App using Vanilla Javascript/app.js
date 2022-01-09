@@ -75,9 +75,8 @@ function removeFromLocal(index) {
     todos = [];
   } else {
     todos = JSON.parse(localStorage.getItem("savedata"));
-  }
-  let elementIndex = todos.indexOf(listElement);
-  todos.splice(elementIndex, 1);
+  } 
+  todos.splice(todos.indexOf(listElement), 1);
   localStorage.setItem("savedata", JSON.stringify(todos));
 }
 
