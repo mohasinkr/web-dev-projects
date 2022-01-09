@@ -64,7 +64,6 @@ function actionCheck(event) {
     parent.classList.toggle("completed");
     parent.classList.toggle("strike-effect");
   }
-  saveEffectsToLocal(targetItem);
 }
 
 function removeFromLocal(index) {
@@ -116,16 +115,6 @@ function saveToLocal(todo) {
   }
   todos.push(todo);
   localStorage.setItem("savedata", JSON.stringify(todos));
-}
-
-function saveEffectsToLocal(target) {
-  let strike_effect;
-  if (localStorage.getItem("effects") == null) {
-    strike_effect = [];
-  } else {
-    strike_effect = JSON.parse(localStorage.getItem("effects"));
-    strike_effect.forEach((item) => {});
-  }
 }
 
 function getAllTodos() {
