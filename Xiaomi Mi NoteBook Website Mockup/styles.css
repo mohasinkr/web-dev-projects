@@ -81,31 +81,31 @@ body {
 
 .banner-service {
   margin-top: 50px;
-  margin-right:5px;
+  margin-right: 5px;
   max-width: 99vw;
   max-height: 100vh;
 }
 
-.video-cover{
+.video-cover {
   width: 100vw;
   height: 100vh;
   object-fit: contain;
   position: relative;
 }
 
-.promo-link{
-  color:white;
-  font-size : 20px;
-  top:40%;
-  left:50%;
+#promo-link {
+  color: white;
+  font-size: 20px;
+  top: 40%;
+  left: 50%;
+  cursor: pointer;
 }
 
-.promo-link>i{
+#promo-link > i {
   font-size: 100px;
   line-height: 0em;
 }
 
-.display-features{
-  
-  font-family: CamphorPro-Bold,sans-serif;
+.display-features {
+  font-family: CamphorPro-Bold, sans-serif;
 }

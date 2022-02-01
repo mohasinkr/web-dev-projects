@@ -13,7 +13,10 @@
       crossorigin="anonymous"
     />
     <!-- BOOTSTRAP ICONS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"
+    />
     <!-- CUSTOM CSS -->
     <link rel="stylesheet" href="styles.css" />
     <script
@@ -91,7 +94,11 @@
     </section>
 
     <section class="d-block mt-5">
-      <img src="assets\img\banner_service.png" class="d-block banner-service" alt="Mi Service Centres">
+      <img
+        src="assets\img\banner_service.png"
+        class="d-block banner-service"
+        alt="Mi Service Centres"
+      />
     </section>
 
     <!-- SPECSHEET IMAGE SECTION -->
@@ -104,15 +111,42 @@
     </section>
 
     <section class="d-block position-relative">
-      <img src="assets\img\video-cover.jpg" class="video-cover" alt="Mi Notebook Ultra Video Cover">
-      <a href="" class="text-white position-absolute promo-link">
-        <i class="d-block bi bi-play"></i>
-        Product Film
+      <img
+        src="assets\img\video-cover.jpg"
+        class="video-cover"
+        alt="Mi Notebook Ultra Video Cover"
+      />
+      <a id="promo-link" class="text-white position-absolute" onclick="videoLoader()">
+        <i class="d-block bi bi-play" onclick="videoLoader()"></i>
+        <span>Product Film</span> 
+        <iframe
+          id="promo-video"
+          class="visually-hidden"
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/MV_WiHaUEbQ"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
       </a>
     </section>
 
     <section class="display-features">
       <h3>SEE EPIC</h3>
     </section>
+
+    <script>
+      function videoLoader(){
+        console.log("entered...");
+        const atext = document.querySelector("#promo-link>span");
+        atext.innerHTML="";
+        const iframetag = document.querySelector("#promo-link > iframe");
+        const playbutton = document.querySelector("#promo-link > i");
+        playbutton.classList.add("visually-hidden");
+        iframetag.classList.remove("visually-hidden");
+      }
+    </script>
   </body>
 </html>
